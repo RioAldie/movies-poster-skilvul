@@ -1,0 +1,14 @@
+@media (min-width: 768px) {
+    .tes{
+        width: 100%;
+    }
+    .red{
+        color: red;
+    }
+}
+.tes{
+    width: 100%;
+}
+.red{
+    color: red;
+}
