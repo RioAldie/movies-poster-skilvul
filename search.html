@@ -3,22 +3,26 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Spimovies</title>
+    <title>RedMovies</title>
+    <link rel="icon" type="image/x-icon" href="/public/icons/logo-redmovie.svg">
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="style.css">
   </head>
   <body class="bg-black">
         <nav class="navbar bg-black p-4 position-sticky top-0" style="z-index: 1000;">
             <div class="container-fluid">
-            <a class="navbar-brand text-light" >Spimovies</a>
+            <a class="navbar-brand text-light" href="/index.html"><img src="./public/icons/logo-redmovie-text.svg" width="80" height="60" alt=""></a>
             <form class="d-flex" role="search">
                 <input id="inputUser" class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
                 >
-                <button class="btn btn-danger" type="submit" id="btn-search">Search</button>
+                <button class="btn btn-danger " type="submit" id="btn-search">Search</button>
             </form>
             </div>
         </nav>
-        <div id="carouselExampleControls" class="carousel slide d-md-none" data-bs-ride="carousel">
+        <div class="d-flex w-100 justify-content-center mt-5 p-5">
+            <img src="./public/icons/Redmovie.svg" class="img-thumbnail bg-black" style="border: none;" alt="...">
+        </div>
+        <div id="carouselExampleControls" class="carousel slide d-md-none mt-5" data-bs-ride="carousel">
             <div class="carousel-inner" id="carousel">
               <div class="carousel-item active ">
                 <img src="./public/images/thum.png" class="d-block" alt="...">
@@ -34,9 +38,12 @@
             </button>
         </div>
         
-        <div class="container d-flex flex-row align-items-center justify-content-evenly  flex-wrap" style="margin-top: 400px;" id="container">
-            <p class="h4 text-danger" id="user-search"></p>
+        <div class="container d-flex flex-row align-items-center justify-content-evenly  flex-wrap" style="margin-top: 200px;" id="container">
+            <p class="h4 text-light" style="width: 100%;" id="user-search"></p>
         </div>
+        <footer class="d-flex w-100 justify-content-center align-items-center">
+
+        </footer>
           <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
           <script type="module" src="./src/carrousel.js"></script>
           <script type="module" src="./src/search.js"></script>
