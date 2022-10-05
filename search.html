@@ -13,9 +13,8 @@
             <a class="navbar-brand text-light" >Spimovies</a>
             <form class="d-flex" role="search">
                 <input id="inputUser" class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
-                ><a href="/search.html">
-                    <button class="btn btn-danger" type="button" id="btn-search">Search</button>
-                </a>
+                >
+                <button class="btn btn-danger" type="submit" id="btn-search">Search</button>
             </form>
             </div>
         </nav>
@@ -34,11 +33,12 @@
               <span class="visually-hidden">Next</span>
             </button>
         </div>
+        
         <div class="container d-flex flex-row align-items-center justify-content-evenly  flex-wrap" style="margin-top: 400px;" id="container">
+            <p class="h4 text-danger" id="user-search"></p>
         </div>
           <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
           <script type="module" src="./src/carrousel.js"></script>
-          <script  src="./src/index.js"></script>
           <script type="module" src="./src/search.js"></script>
   </body>
 </html>
