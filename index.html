@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body class="bg-black">
+    <!-- navbar -->
         <nav class="navbar bg-black p-4 position-sticky top-0" style="z-index: 1000;">
             <div class="container-fluid">
                 <a class="navbar-brand text-light" href="/index.html"><img src="./public/icons/logo-redmovie-text.svg" width="80" height="60" alt=""></a>
@@ -20,9 +21,11 @@
             </form>
             </div>
         </nav>
+        <!-- hero -->
         <div class="d-flex w-100 justify-content-center mt-5 p-5">
             <img src="./public/icons/Redmovie.svg" class="img-thumbnail bg-black" style="border: none;" alt="...">
         </div>
+        <!-- carousel -->
         <div id="carouselExampleControls" class="carousel slide d-md-none" data-bs-ride="carousel">
             <div class="carousel-inner" id="carousel">
               <div class="carousel-item active ">
@@ -38,12 +41,17 @@
               <span class="visually-hidden">Next</span>
             </button>
         </div>
+        <!-- main content -->
         <div class="container d-flex flex-row align-items-center justify-content-evenly  flex-wrap" style="margin-top: 400px;" id="container">
             <p class="h4 text-light" style="width: 100%;">Popular Movies</p>
         </div>
+        <!-- footer -->
+        <footer class="bg-black d-flex w-100 justify-content-center align-items-center" style="height: 300px; margin-top: 100px;">
+            <p class="h5 text-light">© 2022 RedMovies All rights reserved</p>
+        </footer>
+          <script type="module" src="./src/index.js"></script>
           <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
           <script type="module" src="./src/carrousel.js"></script>
-          <script  src="./src/index.js"></script>
-          <script type="module" src="./src/search.js"></script>
+          
   </body>
 </html>
